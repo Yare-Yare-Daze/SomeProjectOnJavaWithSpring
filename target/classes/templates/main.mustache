@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="fullName" placeholder="Введите свои ФИ" >
+        <input type="text" name="faculty" placeholder="Введите факультет">
+        <input type="text" name="typeOfEducation" placeholder="Введите тип обучения">
+        <input type="text" name="grants" placeholder="Введите ваши гранты">
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+<div>Список сообщений</div>
+{{#messages}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{fullName}}</span>
+        <span>{{faculty}}</span>
+        <span>{{typeOfEducation}}</span>
+        <span>{{grants}}</span>
+    </div>
+{{/messages}}
+</body>
+</html>
